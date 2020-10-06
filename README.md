@@ -19,7 +19,8 @@ Type the following in any CLI to run the app.
 npm start
 ```
 Each module's functions have also been demo-ed below.
-![Budget](assets/budget.gif)
+![Budget](assets/main.gif)
+![Offline](assets/offline.gif)
 ## License 
 The project is currently licenseless.
 ## Contributing
