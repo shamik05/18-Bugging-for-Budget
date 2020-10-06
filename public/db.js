@@ -1,3 +1,4 @@
+// Check for browser support
 if (!window.indexedDB) {
   console.log("Your browser doesn't support a stable version of IndexedDB.");
 }

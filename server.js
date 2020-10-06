@@ -14,6 +14,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+// routes
+app.use(require("./routes/api.js"));
+
 // Setup mongo connection
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,
@@ -21,11 +24,10 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useUnifiedTopology: true,
   useCreateIndex: true,
 }).then(() => {
-  console.log("connected");
+  console.log("Database Connected");
 });
 
-// routes
-app.use(require("./routes/api.js"));
+
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);

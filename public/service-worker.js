@@ -1,11 +1,14 @@
+// Define cache names
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
 
+// Get all icons
 const iconSizes = ["192", "512"];
 const iconFiles = iconSizes.map(
   (size) => `/icons/icon-${size}x${size}.png`
 );
 
+// List all files to cache along with the icons
 const staticFilesToPreCache = [
   "/",
   "/index.js",
@@ -17,11 +20,6 @@ const staticFilesToPreCache = [
 
 // install
 self.addEventListener("install", function(event) {
-  // event.waitUntil(
-  //   caches.open(CACHE_NAME).then(cache => cache.add("/api/transaction"))
-  //   // console.log("API requests pre-cached successfully!");
-  // );
-  
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(staticFilesToPreCache))
     // console.log("Your files were pre-cached successfully!");

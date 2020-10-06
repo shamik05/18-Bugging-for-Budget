@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
+// Define transaction details
 const transactionSchema = new Schema(
   {
     name: {
@@ -20,6 +21,7 @@ const transactionSchema = new Schema(
   }
 );
 
+// Export model
 const Transaction = mongoose.model("Transaction", transactionSchema);
 
 module.exports = Transaction;
