@@ -1,7 +1,7 @@
 # Bugging-for-Budget
 ![GitHub License](https://img.shields.io/badge/License-None-blue)
 ## Description
-Bugging for Budget is budget tracker app that allows one to record their revenue and expenses. In a user created transaction, users can set the name and the numeric amount incurred. Each transaction is logged and charted to allow budget tracking. The app also functions in offline mode with the transactions being logged and queued. Once the app regains network functionality, the transactions are processed. The app stores data using NoSQL and indexeddb for online and offline respectively. It uses a backend compromised of express and node to handle network requests. The offline functionality is implemented using the navigator object, service-worker and the browser's indexeddb capabilities. Finally, the app is hosted on heroku [here]().
+Bugging for Budget is budget tracker app that allows one to record their revenue and expenses. In a user created transaction, users can set the name and the numeric amount incurred. Each transaction is logged and charted to allow budget tracking. The app also functions in offline mode with the transactions being logged and queued. Once the app regains network functionality, the transactions are processed. The app stores data using NoSQL and indexeddb for online and offline respectively. It uses a backend compromised of express and node to handle network requests. The offline functionality is implemented using the navigator object, service-worker and the browser's indexeddb capabilities. Finally, the app is hosted on heroku [here](https://buggingforbudget.herokuapp.com/).
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
